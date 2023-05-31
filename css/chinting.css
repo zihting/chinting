@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "LXGW WenKai LITE", sans-serif;
+    
+}
+/* 圖片 */
+.banner{
+    width: 100%;
+    height: 500px;
+    background: 
+        linear-gradient(105deg, rgb(235, 247, 247) 20%, transparent 70%) center center /100% 100%,
+        url("../chinting.jpg") no-repeat right bottom /auto 100%;
+    background-size: cover;
+}
+/* 最上面導覽區 */
+.navbar{
+    display: block;
+    width: 100%;
+    background-color: #48aac4f7;
+    overflow: hidden;
+    font-weight: 500;
+    color: black;
+    position: fixed;
+    z-index: 100;
+}
+.navbar a{
+    margin: 23px;
+}
+.navbar .bar{
+    font-size: 25px;
+    cursor: pointer;
+    color: #042760;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.navbar ul{
+    float: right;
+    margin-bottom: 0;
+}
+.navbar ul li{
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+    color:#042760;
+    transition: 0.7s;
+}
+.navbar ul li:hover{
+    background: linear-gradient(25deg, rgb(159, 199, 253), transparent);
+    color: white;
+    /* font-size: 25px; */
+    
+}
+.navbar ul li a{
+    margin: 0;
+    text-decoration: none;
+    color:#042760;
+}
+.navbar ul li i{
+    margin-right: 5px;
+}
+/* banner的文字 */
+.banner-txt{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-txt div{
+    background: linear-gradient(55deg,rgb(228 226 226), transparent);
+    padding: 30px;
+    border-radius: 7px;
+    margin: 20px;
+    /* 動畫 infinite連續 */
+    animation: moving 3s linear infinite; 
+}
+/* 圖片動畫 */
+@keyframes moving{
+    0% {transform: translateY(0rem);}
+    50% {transform: translateY(2rem);}
+    100% {transform: translateY(0rem);}
+}
+.banner-txt h1{
+   font-size: 60px;
+    font-weight: 900;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+.banner-txt p{
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px;
+}
+.banner-txt p span{
+    display: block;
+}
+/* 中間內容 */
+.container{
+    margin: auto;
+}
+/* 關於津町 */
+.about{
+    width: 100%;
+    margin-top: 10px;
+}
+h2{
+    text-align: center;
+    color: #264653;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+h2 i{
+    margin-right: 10px;
+}
+.aboutinfo{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+.aboutinfo .txt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: #264653;
+}
+.aboutinfo .txt p{
+    margin: 10px 0;
+}
+.aboutinfo .pic{
+    width: 45%;
+    display: flex;
+    margin: auto;
+}
+.aboutinfo .pic img{
+    width: 100%;
+    border-radius: 5%;
+}
+/* 房間介紹 */
+.room{
+    width: 100%;
+    margin-top: 10px;
+}
+.roomtype{
+    display: flex;
+    justify-content: center;
+}
+.roomtype button{
+    background: none;
+    border-radius: 45px;
+    padding: 5px 30px;
+    margin: 10px;
+}
+.roominfo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.roominfo .item{
+    width: 30%;
+    margin: auto;
+    background: none;
+    border: none;
+}
+.roominfo .item img{
+    width: 100%;
+}
+.roominfo .item p{
+    font-size: 18px;
+    text-align: center;
+    color: #264653;
+    margin: 10px;
+}
+/* 房間圖片彈跳視窗 */
+.modal-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 房間圖片輪播 */
+.modal-body .carousel{
+    width: 70%;
+}
+.room_price{
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+    color: #264653;
+}
+.room_price > p:first-child{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* play */
+.playinfo .playtype{
+    display: flex;
+    justify-content: center;
+}
+.playtype button i{
+    margin-right: 5px;
+}
+.placecontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dinnercontainer,.dessertcontainer{
+    display: none;
+    flex-wrap: wrap;
+}
+.dinnerinfo,.dessertinfo,.placeinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55%;
+    height: 100vh;
+    overflow: auto;
+} 
+.dinnerinfo::-webkit-scrollbar{
+    display: none;
+}
+/* 網頁捲軸【寬度】 */
+.dessertinfo::-webkit-scrollbar,.placeinfo::-webkit-scrollbar,.img::-webkit-scrollbar {
+    color: white;
+    width: 8px;
+    height: 8px;
+} 
+/* 網頁捲軸【背景】顏色 */
+.dinnerinfo::-webkit-scrollbar-track,.dessertinfo::-webkit-scrollbar-track,.placeinfo::-webkit-scrollbar-track,.img::-webkit-scrollbar-track {
+background: #fbfcfd;
+}
+
+/* 網頁捲軸【把手】顏色 */
+.dinnerinfo:hover::-webkit-scrollbar-thumb,.dessertinfo:hover::-webkit-scrollbar-thumb,.placeinfo:hover::-webkit-scrollbar-thumb ,.img:hover::-webkit-scrollbar-thumb{
+    background: #97999b;
+    border-radius: 5px;
+}
+
+/* 網頁捲軸【滑過時】把手的顏色 */
+::-webkit-scrollbar-thumb:hover {
+    background: #7e7d7d;
+}
+.map{
+    width: 45%;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+.playcontainer button{
+    width: 30%;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.5s;
+    border-radius: 7px;
+    padding: 10px;
+}
+.playcontainer button:hover{
+    border: 3px solid gray;
+}
+.playcontainer button span{
+    font-size: 20px;
+}
+.playcontainer button img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%;
+    border: 1px solid gray; */
+    object-fit: contain;
+}
+.placecontainer button{
+    width: 45%;
+}
+/* info */
+.info .infotype{
+    display: flex;
+    justify-content: center;
+}
+.info button,.playtype button{
+    background: none;
+    border-radius: 45px;
+    padding: 5px 50px;
+    margin: 10px;
+    color: #397c82;
+    border: 1px solid #397c82;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.info button:hover,.playtype button:hover{
+    color: white;
+    background-color: #397c82;
+}
+.info .orderinfo h4{
+    font-size: 22px;
+    border-left: 5px solid #397c82;
+    padding: 5px 10px;
+    color: #397c82;
+}
+.payinfo,.checkinfo{
+    display: none;
+}
+.info .orderinfo h5{
+    color: brown;
+    font-size: 18px;
+    text-indent: 1em;
+}
+.serviceinfo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.serviceinfo > div{
+    width: 50%;
+}
+.boatinfo a{
+    color: black;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.boatinfo img{
+    width: 80%;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+.serviceinfo ul li{
+    text-indent: 1em;
+}
+.info li{
+    color: black;
+    font-size: 16px;
+}
+.check li{
+    list-style: disc;
+}
+.check span{
+    color: red;
+}
+.payinfo .payaccount li{
+    color: brown;
+}
+/* footer */
+.footer{
+    background-color: #48aac4f7;
+    display: flex;
+    padding: 20px 0;
+}
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin:auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-item img{
+    /* width: 100px; */
+    width: 40%;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+}
+.footer-item > span{
+    margin: 15px;
+    color: #042760;
+}
+.footer-item nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 10px;
+    margin: 10px 0;
+    color: #042760;
+    font-size: 18px;
+    /* border-right: 1px solid gray; */
+    transition: 0.7s;
+}
+.footer-item nav a:hover{
+    color: white;
+}
+.footer-item nav a i{
+    margin-right: 5px;
+}
+.footer-item nav a span{
+    margin-left: 5px;
+}
+.space{
+    position: relative;
+    top: -70px;
+}
+
+/* RWD */
+@media (max-width:660px){
+    /* 導覽列 */
+    .navbar .bar{
+        display: initial;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar ul.show{
+        display: initial;
+        position: relative;
+        width: 100%;
+        top: 0;
+        padding: 10px;
+    }
+    .navbar ul li{
+        float: none;
+        text-align: center;
+    }
+    /* banner 圖片 */
+    .banner{
+        height: 100vh;
+        background: 
+        linear-gradient(125deg, rgb(235, 247, 247) 20%, transparent 70%) center center /100% 100%,
+        url("../chinting.png") no-repeat center bottom /auto 100%;
+    }
+    .banner-txt{
+        height: 70%;
+    }
+    
+    /* banner 文字 */
+    .banner-txt div{
+        padding: 10px 30px;
+        margin: 10px;
+    }
+    .banner-txt h1{
+        font-size: 32px;
+    }
+    .banner-txt p{
+        font-size: 20px;
+    }
+    .banner-txt p span{
+        display: initial;
+    }
+    /* 關於津町 */
+    .aboutinfo .txt{
+        width: 100%;
+    }
+    .aboutinfo .pic{
+        width: 100%;
+    }
+    /* 房間介紹 */
+    .roominfo .item{
+        width: 90%;
+    }
+    /* 房間介紹圖片輪播 */
+    .modal-body .carousel{
+        width: 100%;
+    }
+    .room_price{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    /* 鄰近景點 */
+    .playtype button,.infotype button{
+        width: 30%;
+        padding: 10px;
+
+    }
+    .playtype button i{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .dinnerinfo,.dessertinfo,.placeinfo,.map{
+        width: 100%;
+        height: 40vh;
+    }
+    .playcontainer button{
+        width: 80%;
+    }
+    /* 訂房須知 */
+    .infotype button span{
+        display: block;
+    }
+    .serviceinfo > div,.boatinfo img{
+        width: 100%;
+    }
+    /* footer */
+    .footer-item{
+        width: 100%;
+    }
+}
