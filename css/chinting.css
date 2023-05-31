@@ -11,7 +11,7 @@
     height: 500px;
     background: 
         linear-gradient(105deg, rgb(235, 247, 247) 20%, transparent 70%) center center /100% 100%,
-        url("../chinting.jpg") no-repeat right bottom /auto 100%;
+        url("../image/chinting.jpg") no-repeat right bottom /auto 100%;
     background-size: cover;
 }
 /* 最上面導覽區 */
@@ -436,7 +436,7 @@ background: #fbfcfd;
         height: 100vh;
         background: 
         linear-gradient(125deg, rgb(235, 247, 247) 20%, transparent 70%) center center /100% 100%,
-        url("../chinting.png") no-repeat center bottom /auto 100%;
+        url("../image/chinting.png") no-repeat center bottom /auto 100%;
     }
     .banner-txt{
         height: 70%;
