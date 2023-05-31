@@ -433,7 +433,7 @@ background: #fbfcfd;
     }
     /* banner 圖片 */
     .banner{
-        height: 100vh;
+        height: 65vh;
         background: 
         linear-gradient(125deg, rgb(235, 247, 247) 20%, transparent 70%) center center /100% 100%,
         url("../image/chinting.png") no-repeat center bottom /auto 100%;
