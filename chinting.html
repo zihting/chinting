@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海津&海町文旅</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!-- 霞鶩文楷 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.0.0/style.css" />
+    <!-- 嵌入css -->
+    <link rel="stylesheet" href="./css/chinting.css">
+</head>
+<body>
+    <!-- <img src="https://picsum.photos/600/600"> -->
+    <!-- 最上面導覽區 -->
+    <div class="navbar">
+        <a><img src="./logo.png" style="width:70px;"></a>
+        <div class="bar"><i class="fa-solid fa-bars"></i></div>
+        <ul>
+            <li><a href="#about"><i class="fa-solid fa-house-chimney"></i>關於津町</a></li>
+            <li><a href="#room"><i class="fa-solid fa-bed"></i>房間介紹</a></li>
+            <li><a href="#playinfo"><i class="fa-solid fa-map-location-dot"></i>鄰近景點</a></li>
+            <li><a href="#info"><i class="fa-solid fa-circle-info"></i></i>訂房須知</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <!-- banner文字 -->
+        <div class="banner-txt">
+            <div>
+                <h1>海津&海町文旅</h1>
+                <p>我們是座落於東港小鎮旁的民宿，<span>由兩對可愛、親切的當地夫妻共同經營。</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- 關於津町 -->
+        <div class="about">
+            <div id="about" class="space"></div>
+            <h2><i class="fa-solid fa-house-chimney"></i>關於津町</h2>
+            <div class="aboutinfo">
+                <div class="txt">
+                    <p>
+                        座落於東港小鎮旁的「海津&海町文旅」民宿，是由兩對可愛、親切的當地夫妻共同經營。 除交通便利，緊鄰連接通往東港的進德大橋之外， 擁有眾多名產海鮮小吃等攤販的華僑市場與小琉球渡船頭，也在10分鐘內即可到達。 
+                
+                    </p>
+                    <p>
+                        「海津&海町文旅」有著東港鎮內的熱情與鹽埔村落的靜謐。 熱鬧淳樸的環境、別緻溫馨的套房，使人心情全然放鬆，感受愉快的渡假氣息。 在悠閒與輕鬆的時間來臨時，如果您願意落下腳步，可以與家人或三五好友一同享受遊玩東港。 讓我們為您提供最舒適、最溫暖的「家」。 也和我們一起編織一個屬於海灣的美好回憶。
+                    </p>
+                </div>
+                <div class="pic">
+                    <!-- <img src="image/brige.jpg"> -->
+                    <!-- 圖片輪播 -->
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="image/public_1.jpg">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="image/public_2.jpg">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="image/public_3.jpg">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="image/public_4.jpg">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="image/public_5.jpg">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 房間介紹 -->
+        <div class="room">
+            <div id="room" class="space"></div>
+            <h2><i class="fa-solid fa-bed"></i>房間介紹</h2>
+            <div class="roominfo">
+                <button class="item four" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海津101-尊榮家庭四人套房">
+                    <img src="image/room/chin101_1.jpg">
+                    <p>
+                        海津101-尊榮家庭四人套房
+                    </p>
+                </button>
+                <button class="item four" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海津201-溫馨四人套房-附陽台">
+                    <img src="image/room/chin201_1.jpg">
+                    <p>
+                        海津201-溫馨四人套房-附陽台
+                    </p>
+                </button>
+                <button class="item six" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海津202-典雅浪漫六人和室">
+                    <img src="image/room/chin202_1.jpg">
+                    <p>
+                        海津202-典雅浪漫六人和室
+                    </p>
+                </button>
+                <button class="item two" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海津203-經典雙人套房">
+                    <img src="image/room/chin203_1.jpg">
+                    <p>
+                        海津203-經典雙人套房
+                    </p>
+                </button>
+                <button class="item four" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海町101-溫馨四人套房">
+                    <img src="image/room/ting101_1.jpg">
+                    <p>
+                        海町101-溫馨四人套房
+                    </p>
+                </button>
+                <button class="item two" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海町102-經典雙人套房">
+                    <img src="image/room/ting102_1.jpg">
+                    <p>
+                        海町102-經典雙人套房
+                    </p>
+                </button>
+                <button class="item four" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海町201-家庭四人套房-附陽台">
+                    <img src="image/room/ting201_1.jpg">
+                    <p>
+                        海町201-家庭四人套房-附陽台
+                    </p>
+                </button>
+                <button class="item four" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海町202-典雅四人和室">
+                    <img src="image/room/ting202_1.jpg">
+                    <p>
+                        海町202-典雅四人和室
+                    </p>
+                </button>
+                <button class="item four" data-bs-toggle="modal" data-bs-target="#chin101" data-title="海町203-浪漫四人套房">
+                    <img src="image/room/ting203_1.jpg">
+                    <p>
+                        海町203-浪漫四人套房
+                    </p>
+                </button>
+            </div>
+            <!-- modal 圖片輪播 -->
+            <!-- chin101 -->
+            <div class="modal fade" id="chin101" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="room_price">
+                                <p>【價目表】</p>
+                                <span class="price">
+                                </span>
+                                <span>
+                                    <p>加床：500元/人</p>
+                                    <p>加人：300元/人</p>
+                                    <p>(未滿3歲不另收費)</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 鄰近景點 -->
+        <div class="playinfo">
+            <div id="playinfo" class="space"></div>
+            <h2><i class="fa-solid fa-map-location-dot"></i>鄰近景點</h2>
+            <!-- 選單 -->
+            <div class="playtype">
+                <button class="place" style="background-color: #397c82; color:white;">
+                    <i class="fa-solid fa-location-dot"></i><span>景點</span>
+                </button>
+                <button class="dinner">
+                    <i class="fa-solid fa-utensils"></i><span>晚餐</span>
+                </button>
+                <button class="dessert">
+                    <i class="fa-solid fa-mug-hot"></i><span>點心</span>
+                </button>
+            </div>
+            <div class="playcontainer">
+                <!-- 景點 -->
+                <div class="placecontainer">
+                    <div class="placeinfo">
+                        <button id="p1" style="border:3px solid #397c82;">
+                            <img src="./image/play/place_1.jpg">
+                            <span>小琉球</span>
+                        </button>
+                        <button id="p2">
+                            <img src="./image/play/place_2.jpg">
+                            <span>濱灣公園</span>
+                        </button>
+                        <button id="p3">
+                            <img src="./image/play/place_3.jpg">
+                            <span>青洲濱海遊憩區</span>
+                        </button>
+                        <button id="p4">
+                            <img src="./image/play/place_4.jpg">
+                            <span>海上教堂</span>
+                        </button>
+                        <button id="p5">
+                            <img src="./image/play/place_5.jpg">
+                            <span>大鵬灣卡丁車</span>
+                        </button>
+                        <button id="p6">
+                            <img src="./image/play/place_6.jpg">
+                            <span>勝利星村</span>
+                        </button>
+                        <button id="p7">
+                            <img src="./image/play/place_7.jpg">
+                            <span>高屏舊鐵橋</span>
+                        </button>
+                        <button id="p8">
+                            <img src="./image/play/place_8.jpg">
+                            <span>滿州港口吊橋</span>
+                        </button>
+                        <button id="p9">
+                            <img src="./image/play/place_9.jpg">
+                            <span>林後四林</span>
+                            <span>平地森林園區</span>
+                        </button>
+                        <button id="p10">
+                            <img src="./image/play/place_10.jpg">
+                            <span>雙流國家</span>
+                            <span>森林遊樂區</span>
+                        </button>
+                    </div>
+                    <div class="map">
+                        <!-- <div class="img" style="display:flex; height:30%;overflow: auto;">
+                            <img src="./image/play/place_1.jpg" style="width:210px;object-fit: cover;">
+                            <img src="./image/play/place_2.jpg" style="width:210px;object-fit: cover;">
+                            <img src="./image/play/place_3.jpg" style="width:210px;object-fit: cover;">
+                            <img src="./image/play/place_4.jpg" style="width:210px;object-fit: cover;">
+                        </div> -->
+                        <!-- <div style="height:70%;"> -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29523.131280047226!2d120.3506650577185!3d22.33884504813818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471ef8b9905a955%3A0xc695f3e2705e695b!2z55CJ55CD5ba8!5e0!3m2!1szh-TW!2stw!4v1685089822297!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <!-- 晚餐 -->
+                <div class="dinnercontainer">
+                    <div class="dinnerinfo">
+                        <button id="d1" style="border:3px solid #397c82;">
+                            <img src="./image/play/dinner_1.jpg">
+                            <span>安好食居</span>
+                            <span>088321040</span>
+                        </button>
+                        <button id="d2">
+                            <img src="./image/play/dinner_2.png">
+                            <span>鶴貳樓食府</span>
+                            <span>088355088</span>
+                        </button>
+                        <button id="d3">
+                            <img src="./image/play/dinner_3.jpg">
+                            <span>雙喜牛肉店</span>
+                            <span>088338237</span>
+                        </button>
+                        <button id="d4">
+                            <img src="./image/play/dinner_4.jpg">
+                            <span>阿慶鮮魚湯</span>
+                            <span>088312380</span>
+                        </button>
+                        <button id="d5">
+                            <img src="./image/play/dinner_5.png">
+                            <span>漁農海產店</span>
+                            <span>0921696227</span>
+                        </button>
+                        <button id="d6">
+                            <img src="./image/play/dinner_6.jpg">
+                            <span>秋雄鮮魚小吃</span>
+                            <span>0975518186</span>
+                        </button>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.6213286785433!2d120.43630477502492!3d22.48085997955723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471e1190c2eb3ed%3A0x76efc3da6514f192!2z5a6J5aW96aOf5bGF!5e0!3m2!1szh-TW!2stw!4v1684835761847!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- 點心 -->
+                <div class="dessertcontainer">
+                    <div class="dessertinfo">
+                        <button id="dt1" style="border:3px solid #397c82;">
+                            <img src="./image/play/dessert_1.jpg">
+                            <span>阿鴻豆漿</span>
+                            <span>碳烤饅頭</span>
+                            <span>088327910</span>
+                        </button>
+                        <button id="dt2">
+                            <img src="./image/play/dessert_2.jpg">
+                            <span>御木軒</span>
+                            <span>冰品專賣店</span>
+                            <span>0972011002</span>
+                        </button>
+                        <button id="dt3">
+                            <img src="./image/play/dessert_3.jpg">
+                            <span>樹仔剉冰</span>
+                            <span>088321205</span>
+                        </button>
+                        <button id="dt4">
+                            <img src="./image/play/dessert_4.jpg">
+                            <span>東港正忠豆花</span>
+                            <span>0922255495</span>
+                        </button>
+                        <button id="dt5">
+                            <img src="./image/play/dessert_5.jpg">
+                            <span>冰の家</span>
+                            <span>088326942</span>
+                        </button>
+                        <button id="dt6">
+                            <img src="./image/play/dessert_6.jpg">
+                            <span>古早味白糖炸</span>
+                            <span>0921584737</span>
+                        </button>
+                        <button id="dt7">
+                            <img src="./image/play/dessert_7.jpg">
+                            <span>瑞字號</span>
+                            <span>旗魚黑輪</span>
+                            <span>0986686077</span>
+                        </button>
+                        <button id="dt8">
+                            <img src="./image/play/dessert_8.jpg">
+                            <span>鎮海宮</span>
+                            <span>臭豆腐</span>
+                        </button>
+                        <button id="dt9">
+                            <img src="./image/play/dessert_9.jpg">
+                            <span>東港阿鴻</span>
+                            <span>蔥油餅水煎包</span>
+                            <span>0928782002</span>
+                        </button>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.9772611715694!2d120.44600287502443!3d22.46748877956673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471e1900a7da151%3A0xb743c611fb48273b!2z6Zi_6bS76LGG5ry_56Kz54Ok6aWF6aCt!5e0!3m2!1szh-TW!2stw!4v1685008508852!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 訂房須知 -->
+        <div class="info">
+            <div id="info" class="space"></div>
+            <h2><i class="fa-solid fa-circle-info"></i></i>訂房須知</h2>
+            <div class="infotype">
+                <button class="service" style="color: white; background-color: #397c82;">
+                    <span>貼心</span><span>服務</span>
+                </button>
+                <button class="pay">
+                    <span>匯款</span><span>資訊</span>
+                </button>
+                <button class="checkin">
+                    <span>住宿</span><span>須知</span>
+                </button>
+            </div>
+            <div class="orderinfo">
+                <div class="serviceinfo">
+                    <div>
+                        <h4>貼心服務</h4>
+                        <h5>【提供接駁起始點】</h5>
+                        <ul>
+                            <li>屏東東港轉運站－民宿</li>
+                            <li>東琉線碼頭－民宿</li>
+                            <li>鹽琉線碼頭－民宿</li>
+                        </ul>
+                        <h5>【代訂服務項目】</h5>
+                        <ul>
+                            <li>鹽琉線（大福）船票</li>
+                            <li>琉球鄉機車出租</li>
+                        </ul>
+                        <h5>【停車地點及容納量】</h5>
+                        <ul>
+                            <li>民宿前：4輛</li>
+                            <li>民宿停車場（距民宿50公尺）：6輛</li>
+                        </ul>
+                    </div>
+                    <div class="boatinfo">
+                        <h4>新航線—鹽琉線大福航運</h4>
+                        <a href="https://goo.gl/maps/u7yjav6BwokATpHe8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>
+                            <span>屏東縣新園鄉新興路3號(距離民宿4分鐘)</span>
+                        </a>
+                        <img src="image/boat.jpg">
+                    </div>
+                
+                </div>
+                <div class="payinfo">
+                    <h4>匯款資訊</h4>
+                    <ul class="payaccount">
+                        <li>漁分會代號：523-0129</li>
+                        <li>匯款銀行：東港區漁會 新園分部</li>
+                        <li>銀行帳號：00129220166371</li>
+                        <li>戶名：黃凱菁</li>
+                        <li>聯絡電話：0932-852037</li>
+                    </ul>
+                    <ul class="check">
+                        <li>經電話訂房確認OK後，請於<span>訂房後3日內匯訂金(房價的50%)</span>。</li>
+                        <li>匯款後請務必來電告知您的帳號後五碼，以便確認。</li>
+                        <li>我們於收到訂金後，將為您保留房間，辦理入住時以現金繳付餘款。</li>
+                        <li>匯款完成後,請電話、LINE@或Messenger告知,感謝。</li>
+                    </ul>
+                </div>
+                <div class="checkinfo">
+                    <h4>住宿須知</h4>
+                    <ul class="check">
+                        <li>辦理入住時間：當日15點至21點（如需提前或延後請致電告知）</li>
+                        <li>​辦理退房時間：隔日11點前（如需延後費用另計）</li>
+                        <li><span>室內全面禁煙</span>。</li>
+                        <li><span>禁止攜帶寵物入住</span>。</li>
+                        <li>敬請依約定人數入住。</li>
+                        <li>PM22:00～AM07:00 必須放低音量。</li>
+                        <li>如提早到達，房間整理完畢即可辦理入住，房間整理未完成者可先辦理寄放行李。</li>
+                    </ul>
+                    <h4>延期與退費說明</h4>
+                    <ul class="check">
+                        <li>匯款後若因故欲更改日期，請於4日前通知，可退訂金50%(需扣除手續費100元)或保留房間六個月，否則訂金沒收、恕不另行通知。</li>
+                        <li>匯款後若因故欲更改日期，請於3日前通知，不接受保留訂金及延期。</li>
+                        <li>保留之訂金，不限本人使用，可將訂金轉讓給親友使用，不限原訂房型及間數，可更換其他房間與間數，如有差額需補足差額。</li>
+                        <li>延期之住客如決定下次住宿日期後，請儘早來電訂房，避免發生該日無空房之窘境。</li>
+                        <li> 如遇颱風、地震等不可抗拒之天災，導致交通中斷無法如期前往，可退全額訂金(需扣除手續費100元)或訂金可保留一年。</li>
+                        <li>住宿日若是颱風登陸前二日或颱風離開後二日，無法如期前往者，可退訂金50%(需扣除手續費100元)或訂金可保留一年。</li>
+                        <li>若您須要訂房或想進一步洽詢任何問題，請與海津&海町文旅聯繫。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-item">
+                <img src="./logo.png">
+                <span>Copyright &copy; 海津&海町文旅</span>
+            </div>
+            <!-- 導覽區 -->
+            <div class="footer-item">
+                <nav>
+                    <a href="#about"><i class="fa-solid fa-house-chimney"></i>關於津町</a>
+                    <a href="#room"><i class="fa-solid fa-bed"></i>房間介紹</a></li>
+                    <a href="#playinfo"><i class="fa-solid fa-map-location-dot"></i>鄰近景點</a>
+                    <a href="#info"><i class="fa-solid fa-circle-info"></i></i>訂房須知</a>
+                </nav>
+            </div>
+            <!-- 聯絡區 -->
+            <div class="footer-item">
+                <nav>
+                    <a href="https://www.google.com.tw/maps/place/%E6%B5%B7%E6%B4%A5%26%E6%B5%B7%E7%94%BA%E6%96%87%E6%97%85/@22.4769638,120.4443159,17z/data=!3m1!4b1!4m9!3m8!1s0x3471e19c0475eae7:0x3123dd816efc5607!5m2!4m1!1i2!8m2!3d22.4769638!4d120.4443159!16s%2Fg%2F11fphvfp1v?hl=zh-TW&authuser=0" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>
+                      <span>932屏東縣新園鄉鹽洲路81號</span>
+                    </a>
+                    <a href="tel:+886-932852037">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <span>0932-852037</span>
+                    </a>
+                    <a href="mailto:haichin81@gmail.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg>
+                        <span>haichin81@gmail.com</span>
+                    </a>
+                    <a href="line://ti/p/@875jpwaj">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-line" viewBox="0 0 16 16">
+                            <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
+                        </svg>
+                        <span>ID : @875jpwaj</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100064119731354&fref=nf"  target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <span>海津&海町文旅</span>
+                    </a>
+                </nav>
+            </div>
+            <!-- 嵌入facebook -->
+            <div class="footer-item">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100064119731354%26fref%3Dnf&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden;height: 100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 嵌入js -->
+<script src="./js/chinting.js"></script>
